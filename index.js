@@ -9,3 +9,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000);
+
+const { User } = require('./app/models');
+
+User.create({ name: 'Iorgen', email: 'iorgen@rocketseat.com', password: '123456' });
