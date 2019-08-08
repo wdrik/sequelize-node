@@ -48,7 +48,7 @@ app.post('/users', async (req, res) => {
   }
 });
 
-//--> Edit
+//--> Update
 app.put('/users/:id', async (req, res) => {
   const { id } = req.params;
 
@@ -65,7 +65,7 @@ app.put('/users/:id', async (req, res) => {
   }
 });
 
-//--> Remove
+//--> Destroy
 app.delete('/users/:id', async (req, res) => {
   const { id } = req.params;
 
